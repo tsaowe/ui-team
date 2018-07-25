@@ -2,18 +2,19 @@
 
 # Folder structure
 
---
- |-- newMatesWorks    - Each new mate's work folder
- |        |-- Haque
- |        |-- LiuYaoYao
- |        |-- ZhangTongLi
- |
- |-- trainingMaterials    - Training materials group by different technical directions
- |        |-- webFrontend
- |        |-- webBackend
- |        |-- Linux
- |        |-- Docker
-
+```
+ui-team
+    |-- newMatesWorks    - Each new mate's work folder
+    |        |-- Haque
+    |        |-- LiuYaoYao
+    |        |-- ZhangTongLi
+    |
+    |-- trainingMaterials    - Training materials group by different technical directions
+    |        |-- webFrontend
+    |        |-- webBackend
+    |        |-- Linux
+    |        |-- Docker
+```
 
 For each new mate's work folder, you new mates can put your works on it, for the unified management,
 and try to use Git to manage your projects.
@@ -35,4 +36,4 @@ They are for a long-term study plan of your web development career.
 
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 
-You may fist learn the most useful command, and get what the Git is.
+You may fist learn the most useful commands, and get what the Git is and what work it does.
