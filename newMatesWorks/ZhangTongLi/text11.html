@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>text switching</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: "微软雅黑";
+        }
+
+        .title {
+            margin-top: 60px;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .content {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            color: #3c3c3c;
+        }
+
+        .content p {
+            margin-top: 30px;
+        }
+
+        .button-wrapper {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .button-wrapper button {
+            padding: 5px 20px;
+            border: 1px solid gray;
+            border-radius: 30px;
+        }
+        .button-wrapper button:hover {
+            color: #3690ff;
+            border: 1px solid #3690ff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="title">新闻列表</div>
+    <div class="content">
+        <p>
+            <span>对接发展战略发挥互补优势 秘鲁总理比利亚努</span>
+        </p>
+        <p>
+            台风“安比”登陆 申城经受考验应对有序
+        </p>
+    </div>
+    <div class="button-wrapper">
+        <button  type="button" onclick="findNode()">简繁切换</button>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+    /*
+    3. 参考的技术要点：
+
+    获取节点、获取节点的子节点、判断节点类型(nodeType)、修改节点内容、
+    从body开始递归到每个子级节点、button点击事件绑定
+
+    */
+
+    // write your js codes below
+
+    function findNode(node) {
+        var mystr = [];
+
+
+        for(var i = 0 ; i < node.childNodes.length ; i++){
+            if(node.childNodes[i].nodeType == 3) {
+                mystr[i] = node.childNodes[i].nodeValue
+            }
+            else{
+                var r = node.childNodes[i];
+                findNode(r);
+
+            }
+        }
+
+
+    }
+
+</script>
+</html>
