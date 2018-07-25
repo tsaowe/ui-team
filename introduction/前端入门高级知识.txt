@@ -31,17 +31,21 @@ JavaScript
 
 1. JavaScript的预解析机制、变量的提升
 
-2. JavaScript的原型链prototype
+2. 什么是作用域，块级作用域和function作用域的区别
 
 3. 闭包的产生与规避
 
-4. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量扩展等
+4. JavaScript的原型链prototype
+
+5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量扩展等
    特别是弄明白 箭头函数和普通function函数的区别，Promise/then异步处理对象、let和var的区别
    必须
 
-5. ES7 async/await 异步语法糖 必须
+6. ES7 async/await 异步语法糖 必须
 
-6. 理解ES2015的模块化，import、export，必须
+7. 理解ES2015的模块化，import、export，必须
+
+8. 了解下正则表达式
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -52,6 +56,8 @@ HTTP
 1. 了解Fetch的基础知识，以及它和Ajax的区别之处 必须
 
 2. HTTP2.0相对于HTTP1.X有哪些优化的地方
+
+3. Cookie的作用
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -71,7 +77,8 @@ HTTP
 
 下集预告：
 
-MVVM响应式概念、React.js、Redux、流程化任务工具Gulp、模块打包工具webpack/browserify
+1. css预处理语言与后处理工具、MVVM响应式概念、流程化任务工具Gulp、模块打包工具webpack/browserify
+2. 接触项目有关的框架和库 React.js、Redux
 
 
 
