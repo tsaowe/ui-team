@@ -110,18 +110,15 @@
             // bind mouse click events on bar
             bar.addEventListener('mousedown', function (){
                 isMouseDown = true;
-                console.info('mouse is down');
             });
 
             bar.addEventListener('mouseup', function (){
                 isMouseDown = false;
-                console.info('mouse is up');
             });
 
             // bind mouse move event on container
             imageContainer.addEventListener('click', function (){
                 isMouseDown = false;
-                console.info('mouse is up');
             });
 
             imageContainer.addEventListener('mousemove', function (e){
