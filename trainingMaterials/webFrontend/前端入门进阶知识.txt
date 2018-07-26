@@ -37,7 +37,7 @@ JavaScript
 
 4. JavaScript的原型链prototype
 
-5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量扩展等
+5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量增强、对象与数组的解构赋值等
    特别是弄明白 箭头函数和普通function函数的区别，Promise/then异步处理对象、let和var的区别
    必须
 
