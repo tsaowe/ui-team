@@ -5,23 +5,36 @@
     <title>浮动与清除浮动</title>
     <style>
     .news {
-    background-color: gray;
-    border: solid 1px black;
+        background-color: gray;
+        border: solid 1px black;
+        display: block;
+        zoom: 1;
+    }
+
+    .news:after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
     }
 
     .news img {
-    float: left;
+        float: left;
     }
 
-   /*.news p {
-    float: right;
-    }*/
+   .news p {
+       width: 1000px;
+       float: right;
+    }
     </style>
 </head>
 <body>
 <div class="news">
     <img src="./IMG_3550.jpg" />
     <p>
+        This is a text.This is a text.This is a text.This is a text.
+        This is a text.This is a text.This is a text.This is a text.
         This is a text.This is a text.This is a text.This is a text.
         This is a text.This is a text.This is a text.This is a text.
         This is a text.This is a text.This is a text.This is a text.
