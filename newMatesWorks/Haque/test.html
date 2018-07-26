@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100vw;
+            background: black;
+            transition: all .5s;
+        }
+
+        /**伪类**/
+
+        div:hover {
+            background: red;
+        }
+    </style>
+    <script>
+
+
+        function clickEvent() {
+            console.log(123);
+            console.log(234);
+            console.log(345);
+            console.log(456);
+        }
+
+    </script>
+</head>
+<body>
+<div onclick="clickEvent();"></div>
+</body>
+</html>

@@ -61,7 +61,7 @@
         </p>
     </div>
     <div class="button-wrapper">
-        <button  type="button" onclick="findNode()">简繁切换</button>
+        <button  type="button" onclick="findNode(docunment.getElementsByTagName('body'))">简繁切换</button>
     </div>
 </div>
 
@@ -77,11 +77,8 @@
     */
 
     // write your js codes below
-
+    var mystr = [];
     function findNode(node) {
-        var mystr = [];
-
-
         for(var i = 0 ; i < node.childNodes.length ; i++){
             if(node.childNodes[i].nodeType == 3) {
                 mystr[i] = node.childNodes[i].nodeValue
@@ -92,8 +89,6 @@
 
             }
         }
-
-
     }
 
 </script>

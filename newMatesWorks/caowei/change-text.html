@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function changeText(node) {
+            if (!node) {
+                node = document.getElementsByTagName('html')[0];
+            }
+            if (node.nodeType === 3) {
+                if (/123/g.test(node.nodeValue)) {
+                    node.nodeValue = node.nodeValue.replace(/123/g, '456');
+                }
+                console.log(node.nodeValue);
+            } else {
+                let children = node.childNodes;
+                children.forEach(childNode => changeText(childNode));
+            }
+        }
+
+        function clickEvent() {
+            changeText();
+            alert('123');
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="clickEvent()">click me 123</button>
+</body>
+
+</html>
