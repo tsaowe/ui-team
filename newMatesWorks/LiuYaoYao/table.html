@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>tabled的相关学习</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            width:60%;
+        }
+        table,th, td{
+            border: 1px solid blue;
+        }
+        th{
+            height: 40%;
+            background-color: bisque;
+            color: darkred;
+        }
+        td{
+            text-align: center;
+        }
+        caption {
+            caption-side: bottom;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <caption>table 1.1</caption>
         <tr>
             <th>firstname</th>
+            <th>lastname</th>
+            <th>point</th>
+        </tr>
+        <tr>
+            <td>jill</td>
+            <td>smith</td>
+            <td>50</td>
+        </tr>
+        <tr class="alt">
+            <td>eve</td>
+            <td>jacksion</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>jon</td>
+            <td>doe</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>adam</td>
+            <td>jacksion</td>
+            <td>94</td>
         </tr>
     </table>
 </body>
