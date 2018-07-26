@@ -31,19 +31,21 @@ JavaScript
 
 1. JavaScript的预解析机制、变量的提升
 
-2. 什么是作用域，块级作用域和function作用域的区别
+2. 什么是作用域，ES2015的块级作用域和传统的function作用域的区别 必须，尽量理解
 
-3. 闭包的产生与规避
+3. 闭包的产生与规避 必须，尽量理解
 
-4. JavaScript的原型链prototype
+4. JavaScript的原型链prototype 必须，尽量理解
 
 5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量增强、对象与数组的解构赋值等
-   特别是弄明白 箭头函数和普通function函数的区别，Promise/then异步处理对象、let和var的区别
+   特别是弄明白 箭头函数和普通function函数的区别（this指向），Promise/then异步处理对象、let和var的区别
    必须
 
 6. ES7 async/await 异步语法糖 必须
 
-7. 理解ES2015的模块化，import、export，必须
+7. 了解this的指向，ES5 bind方法对this的改变 必须，尽量理解
+
+7. 理解ES2015的模块化，import、export 必须
 
 8. 了解下正则表达式
 
