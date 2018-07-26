@@ -1,0 +1,22 @@
+{
+  "name": "ui-team",
+  "version": "1.0.0",
+  "description": "# Folder structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsaowe/ui-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsaowe/ui-team/issues"
+  },
+  "homepage": "https://github.com/tsaowe/ui-team#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
