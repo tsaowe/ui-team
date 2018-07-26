@@ -47,6 +47,4 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 You may fist learn the most useful commands, and get what the Git is and what work it does.
 
 
-### add branch ztl during exercise
-
-## add caowei folder
+# write a html file with table content like the image under images folder 
