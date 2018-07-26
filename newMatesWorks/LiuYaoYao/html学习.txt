@@ -15,4 +15,6 @@ a标签：形式：<a href="地址"></a>,a标签是用来文本超链接，就�
            select，下拉列表 通常的形式是<select name=""><option></option><option></option><option></option></select>
  <ul>:无序列表 一般的形式是：<ul><li></li><li></li></ul>,无序列表<ol><li></li></ol>，后面也会提到通过
         list-style-type来设置列表项的标记类型
-  iframe是一个内联的框架
+  iframe是一个内联的框架,内联框架被用来在当前的html文档中嵌入另一个文档
+            <iframe src="table.html" height="200" width="200"> </iframe>比如这句话，就是将table.html中的页面显示结果放到 高和宽都为200的框框里
+            frameborder属性用来定义iframe表示是否显示边框，将其属性设置为0，表示移除边框
