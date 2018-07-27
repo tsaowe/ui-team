@@ -1,0 +1,117 @@
+前言：
+
+当你学完前两节以后，在web前端领域，你应该对HTML、DOM、JavaScript、HTTP有了初步的认识，对重要基
+础知识点也有了一定的了解。
+
+当然，前两章节的主要目的并不是让你完全熟练掌握这些知识点，这在短时间内对你是不现实的。它们更重要的目
+的是让你对前端有一个整体的认识，知道前端是什么，要做什么东西，以及前端所涉及到的技术体系。
+
+在后续的学习中，对于前两个章节所提到的内容，你可以保持回头看的态度，以加深理解。
+
+该章节的内容将指引你学习在实际项目开发中会使用到的高级概念、高级框架和库。
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+概念：
+
+1. 了解MVC的概念，M代表什么，V代表什么，C代表什么，在Web前端领域，MVC是怎样应用的
+
+2. 了解MVVM的概念，它与MVC有什么区别，它和普通的使用DOM API或者jQuery有什么区别
+
+3. 前端模块化的概念，在上一章节你一定对此了解了一下，但它提到的只是ES2015的模块，这是现代化的前端开发项目中
+   最常用到的。除此之外，你还需要对整个前端的"模块化发展历程"有个整体的认识，包括概念和相关的库，
+   譬如：匿名函数包裹，命名空间，commonJS，AMD/CMD，require.js/sea.js。
+   最重要的是弄清楚，模块化的目的和意义，也就是为什么要模块化。
+
+4. 在上一章，你一定了解了ES2015的新特性，可能你知道不是所有的浏览器都能够原生支持这些新特性，那么怎么广泛地适
+   配浏览器呢？我们需要Babel将高级的ES2015、ES7语法，降级转译为ES5，甚至是ES3语法，因为只有ES5/3语法才是被
+   所有浏览器广泛支持的。
+
+   Babel参考网站：
+   中文：https://www.babeljs.cn/docs/setup/
+   英文：http://babeljs.io/
+
+6. 对于ES2015新语法中模块化部分的打包，需要Browserify或者Webpack的加入才能完成，请对他们的功能有一个大致的认识
+
+    Webpack参考网站：
+    中文：http://webpack.css88.com/
+    英文：http://webpack.github.io/
+
+    这里首先了解下Webpack，Browserify可以省略。
+
+7. 上面提到的Browserify，这是一个很Unix微核心思想的模块化打包工具，它本身只提供了最核心的东西，其他功能都需要额
+   外的库来扩展。往往我们使用Gulp/Grunt这些流程任务处理工具来配合它使用。而Webpack是一个大而全的工具。
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+框架与库：
+
+1. CSS预处理语言 Less、SASS、Stylus等，后处理 post-css。
+   请了解预处理和后处理的用处，为什么会有它们的产生
+
+2. React.js
+   起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，
+   用来架设 Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。
+
+   ！！！在这里强制要求你去学习她
+
+   React.js参考网站：
+   中文：https://doc.react-china.org/docs/hello-world.html
+   英文：https://reactjs.org/
+
+3. React-Router
+   配合React.js 实现基于url的路由的一个扩展库
+
+   参看网站：
+   中文：https://reacttraining.com/react-router/web/example/basic
+   英文：https://reacttraining.com/react-router/web/example/basic
+
+4. Redux
+   状态管理库，尽量理解
+
+5. Antd
+   阿里巴巴集团蚂蚁金服提炼出的一套面向用户图形设计模式，不仅仅是一套UI框架，主要面向企业级应用。
+
+   参考网站：
+   https://ant.design/docs/react/introduce-cn
+
+   除此之外还有
+
+6. CLI工具，比如：create-react-app，成熟的CLI工具都是某个开发框架官方或者社区对Babel、Webpack
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+后记：
+
+1. 所有培训的资料涉及到的仅仅是Web前端知识技术体系的冰山一角，在你基础牢固以后，可以开拓视野，学习一些自己
+   之前没有了解过的东西。
+
+2. Web前端行业目前已经有了很细致的划分：
+   1) PC网站，可能你还需要学会PhotoShop等工具
+   2) 移动设备HTML5网站
+   3）移动设备HTML5 APP
+   4）移动设备HTML5与Native的混合Hybrid APP
+   5）React Native、Weex等用JavaScript构建Native APP
+   6) 管理后台应用
+   7）HTML5 canvas、webGL游戏应用和3D模型开发，cocos-h5、白鹭
+   8）图表化的数据可视化应用 D3.js、Echarts
+   9) 基于Web瓦片地图LBS应用
+   10) 基于推流、Web解码和HTML5的直播应用
+   11）...
+
+   从以上可以看出，Web前端开发是一个十分面向我们生活的技术体系。
+
+   在我司，你们目前主要能接触到的是1)、2)、6)方向，在你有一定经验以后，你可以在此基础上尝试更多。
+
+3. React只是我司目前Web前端开发所用的框架，除此之外还有老牌的Angular以及站在巨人肩膀的Vue。MVC时代的
+   YUI、Backbone.js、ExtJS也是非常不错。
+
+4. 送你一个网站链接 https://docschina.org/
+
+5. 恭喜你，你已经正式掉入Web前端的坑里，哦，不，应该是：你已经正式入门Web前端开发。
