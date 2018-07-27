@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>栅格布局</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 0.25fr 5px 0.75fr;
+            grid-template-rows: auto 5px auto 5px auto 5px auto;
+         }
+        .grid {
+            background-color: #444;
+            color: #fff;
+            padding: 15px;
+            font-size: 3rem;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .sidebar {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            background: #a0c263;
+        }
+        .content {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background: #f5c531;
+            height: 400px;
+        }
+        .extra {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            background: #898989;
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            background: #FFA500;
+        }
+        .news img {
+            float: left;
+        }
+        p.test{
+            word-wrap:break-word;  /* 允许长单词换行到下一行：*/
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="grid header" style="text-align:center">This is Header</div>
+    <div class="grid sidebar">
+        <img src="./IMG_3550.jpg" />
+        <p class="test" style="font-size: 2rem"  >
+            This is a text.This is a text.This is a text.This is a text.
+        </p>
+    </div>
+    <div class="grid content">This is Main Content</div>
+    <div class="grid extra">This is Extra Content</div>
+    <div class="grid footer">This is Footer</div>
+</div>
+</body>
+</html>
