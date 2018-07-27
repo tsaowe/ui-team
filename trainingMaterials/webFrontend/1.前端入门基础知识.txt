@@ -63,13 +63,13 @@ JavaScript
 
 HTTP
 
-1. TCP/IP协议的三次握手建立连接
+1. TCP/IP协议的三次握手建立连接的过程
 
-2. HTTP协议的基础知识，request headr、response header的属性有哪些
+2. HTTP协议的基础知识，request header、response header的属性有哪些
 
-3. 了解Http的状态码，特别是200、302、404、500
+3. 了解Http的状态码，特别是200、302、404、500、502
 
-4. 了解XmlHttpRequest对象，如何发起一个Ajax请求，各类型statusCode含义
+4. 了解XmlHttpRequest对象，如何发起一个Ajax请求，method有哪些可选值，各类型statusCode含义
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

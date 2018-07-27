@@ -21,7 +21,7 @@ ui-team
     |        |-- webBackend
     |        |-- Linux
     |        |-- Docker
-    |        | ...
+
 ```
 
 For each new mate's work folder, you new mates can put your works on it, for the unified management,
