@@ -20,5 +20,11 @@ css 的定位于浮动：display：block可以让行内元素表现的像块级�
                   css的三种定位机制：普通流，浮动，绝对定位
                   css position属性值：static,relative,absolute,fixed
                                       relative:相对于当前的框偏离某个位置
-                                      absolute：元素框从文档流中完全消失，并相对于其包含块定位
-                                      fixed：作用类似于absolute，只是包含块是视窗本身
+                                      absolute：元素框从文档流中完全消失，并相对于其包含块定位,绝对定位的元素的位置是相对于最近已定位的父元素，如果元素没有已定位的父元素
+                                                那么它的位置相对于<html>
+                                      fixed：作用类似于absolute，只是包含块是视窗本身,元素位置相对于浏览器窗口是固定的位置，机试窗口是滚动的它也不会移动
+                                      z-index属性指定了一个元素的堆叠顺序（那个元素应该放在前面或者后面）一个元素可以有正数和负数的堆叠顺序
+                                      overflow: scroll;溢出就滚动
+                                      overflow: hidden;溢出就隐藏
+                                      overflow: auto;溢出自动处理
+                                      清除浮动使用clear,clear属性指定元素两侧不能出现浮动元素，
