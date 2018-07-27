@@ -102,7 +102,7 @@
    5）React Native、Weex等用JavaScript构建Native APP
    6) 管理后台应用
    7）HTML5 canvas、webGL游戏应用和3D模型开发，cocos-h5、白鹭
-   8）图表化的数据可视化应用 D3.js、Echarts
+   8）大数据图表化的数据可视化应用 SVG D3.js、canvas z-render.js Echarts、hightcharts
    9) 基于Web瓦片地图LBS应用
    10) 基于推流、Web解码和HTML5的直播应用
    11）...
