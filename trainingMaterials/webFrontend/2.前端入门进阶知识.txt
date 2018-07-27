@@ -10,11 +10,17 @@ HTML
 
 CSS
 
-1. 行高与垂直居中(line-height & vertical-align: middle;)
+1. line-height 顶线、中线、基线、底线的概念，以及line-height和vertical-align联合使用中的问题
 
-2. css3 flex布局 必须
+2. 更加丰富多样的清除浮动方式还有哪些
 
-3. css3 动画、过度、变换、过滤等新特效
+3. CSS position支持的属性有哪些，有什么区别，以及z-index生效的前提是什么
+
+4. CSS3 了解flex弹性布局   必须
+
+5. CSS3 了解动画、过度、变换、过滤等新特效
+
+6. 实现一个CSS 圣杯布局
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -31,23 +37,25 @@ JavaScript
 
 1. JavaScript的预解析机制、变量的提升
 
-2. 什么是作用域，ES2015的块级作用域和传统的function作用域的区别 必须，尽量理解
+2. 什么是作用域，ES2015的块级作用域和传统的function作用域的区别    必须，尽量理解
 
-3. 闭包的产生与规避 必须，尽量理解
+3. 闭包的产生与规避    必须，尽量理解
 
-4. JavaScript的原型链prototype 必须，尽量理解
+4. 了解JavaScript的原型链prototype    必须，尽量理解
 
 5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量增强、对象与数组的解构赋值等
    特别是弄明白 箭头函数和普通function函数的区别（this指向），Promise/then异步处理对象、let和var的区别
    必须
 
-6. ES7 async/await 异步语法糖 必须
+6. ES7 async/await 异步语法糖    必须
 
-7. 了解this的指向，ES5 bind方法对this的改变 必须，尽量理解
+7. 了解this的指向，call、apply、bind方法对this的改变    必须，尽量理解
 
-7. 理解ES2015的模块化，import、export 必须
+7. 理解ES2015的模块化，import、export   必须
 
-8. 了解下正则表达式
+8. 传统的function有四种方式被调用:
+   作为普通的函数、作为类的构造函数、作为对象内部的方法、被call/apply调用
+   理解下每一种调用方式
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -55,7 +63,7 @@ JavaScript
 
 HTTP
 
-1. 了解Fetch的基础知识，以及它和Ajax的区别之处 必须
+1. 了解Fetch的基础知识，以及它和Ajax的区别   必须
 
 2. HTTP2.0相对于HTTP1.X有哪些优化的地方
 
@@ -80,6 +88,7 @@ HTTP
 下集预告：
 
 1. css预处理语言与后处理工具、MVVM响应式概念、流程化任务工具Gulp、模块打包工具webpack/browserify
+
 2. 接触项目有关的框架和库 React.js、Redux
 
 
