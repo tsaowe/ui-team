@@ -61,9 +61,11 @@ JavaScript
    作为普通的函数、作为类的构造函数、作为对象内部的方法、被call/apply调用
    理解下每一种调用方式
 
-10. Javascript的垃圾回收机制
+10. Javascript的事件循环机制 Event Loop
 
-11. Javascript引擎(解释器)的变革
+11. Javascript的垃圾回收机制 Garbage Collection
+
+12. Javascript引擎(解释器)的变革
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
