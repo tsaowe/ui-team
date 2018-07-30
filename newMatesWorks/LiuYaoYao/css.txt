@@ -30,3 +30,12 @@ css 的定位于浮动：display：block可以让行内元素表现的像块级�
                                       清除浮动使用clear,clear属性指定元素两侧不能出现浮动元素，
  栅格布局：
             圣杯布局：是一种三列布局，两边定宽，中间自适应，圣杯布局的原理就是当子元素处于浮动状态时，设置负margin，子元素会覆盖到兄弟元素之上
+            栅格布局：简单的理解就是在一个容器中的一行被分成了很多列，这些列的个数最多不能超过12个
+  单行文本溢出显示省略号：text-overflow：ellipse，部分浏览器还需要加宽度的width属性
+
+
+  dom：dom是文档对象模型，通过dom可以访问所有的html元素，联通他们所包含的文本和属性，可以通过三种方式查找（1）通过id查找html元素，返回类型是一个对象
+       （2）通过标签名找到html元素，返回类型是数组（3）通过类名找到html元素，返回类型是数组
+       javascript能够创建动态的html内容，使用document.write()可用于直接向html输出流写内容,绝对不能再文档加载完后使用document.write,这样会覆盖文档
+       改变html内容可以使用innerHTML属性，（这个属性主要是通过id获取到的）
+       改变html样式document.getElementById(id).style.property=new style
