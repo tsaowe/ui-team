@@ -4,7 +4,7 @@
 
 ```
 ui-team
-    |-- exercises    - Exercises group by different technical directions
+    |-- exercisesAndExamples    - Exercises and examples group by different technical directions
     |        |--webFrontend
     |        |-- webBackend
     |        |-- Linux

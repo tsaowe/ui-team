@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>js scope</title>
+    </head>
+    
+    <body>
+    </body>
+
+    <script type="text/javascript">
+        /*
+
+        运行，然后看每一个console.info打印出的是什么
+
+        */
+        var obj = {
+            test1 : function (){
+                window.setTimeout(function (){
+                    console.info(this)
+                }, 100)
+            },
+
+            test2 : function (){
+                window.setTimeout(() => {
+                    console.info(this)
+                }, 100)
+            },
+
+            test3: () => console.info(this),
+
+            test4: function (){
+                 console.info(this)
+            },
+
+            test5 (){ // 对象增强写法
+                console.info(this);
+            }
+        }
+
+        obj.test1(); // window
+        obj.test2(); // obj
+        obj.test3(); // obj
+        obj.test4(); // window
+        obj.test5(); // obj
+    </script>
+</html>
