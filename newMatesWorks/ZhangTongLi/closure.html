@@ -17,7 +17,7 @@
         var els = document.getElementById("test").getElementsByTagName("div");
         for (var i = 0; i < els.length; i++)
         {
-            var div = els[i];
+            var div = els[i]; //修改为let div = els[i];使用块级作用域let可以正常输出
             div.onclick = function()
             {
                 alert(div.innerHTML);
