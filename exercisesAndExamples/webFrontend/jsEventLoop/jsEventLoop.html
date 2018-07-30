@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>keep in memory</title>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+    /*
+
+    运行，然后看每一个console.info输出的是什么
+
+    */
+
+    var i = 0;
+
+    setTimeout(function (){
+        console.info(i);
+    }, 1000);
+
+    i += 1;
+
+    /*
+
+    var i = 0;
+
+    setTimeout(function (){
+        console.info(i);
+    }, 0);
+
+    i += 1;
+
+    */
+
+    /*
+
+    var i = 0;
+
+    setTimeout(function (){
+        console.info(i);
+    }, 0);
+
+    i += 1;
+
+    alert();  // 10秒以后再点击Ok，console.info会在点击Ok以后输出吗？
+
+     */
+
+</script>
+</html>
