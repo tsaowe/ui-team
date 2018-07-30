@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>js closure</title>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+    /*
+
+    运行，然后看每一个console.info打印出的是什么
+
+    */
+
+    var arr = [];
+    for (var i = 0; i < 10; i ++){
+        arr[i] = function (){
+            alert(i);
+        }
+    }
+
+
+    /*
+    var arr = [];
+    for (let i = 0; i < 10; i ++){
+        arr[i] = function (){
+            alert(i);
+        }
+    }
+    */
+
+    /*
+    var arr = [];
+    for (var i = 0; i < 10; i ++){
+        arr[i] = (function (i){
+            return function (){
+                alert(i);
+            }
+        })(i)
+    }
+    */
+</script>
+</html>
