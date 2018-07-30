@@ -11,23 +11,23 @@
 <script type="text/javascript">
     /*
 
-    运行，然后看每一个alert弹出的是什么
+    运行，然后看每一个console.info打印出的是什么
 
     */
+
 
     var arr = [];
     for (var i = 0; i < 10; i ++){
         arr[i] = function (){
-            alert(i);
+            console.info(i);
         }
     }
-
 
     /*
     var arr = [];
     for (let i = 0; i < 10; i ++){
         arr[i] = function (){
-            alert(i);
+            console.info(i);
         }
     }
     */
@@ -36,12 +36,18 @@
     var arr = [];
     for (var i = 0; i < 10; i ++){
         arr[i] = (function (i){
+            // the param i is in this context
             return function (){
-                alert(i);
+                console.info(i);
             }
         })(i)
     }
+
     */
+
+    arr[1]();
+    arr[2]();
+    arr[3]();
 
     /*
 
