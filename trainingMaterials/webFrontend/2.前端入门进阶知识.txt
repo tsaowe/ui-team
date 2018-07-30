@@ -53,7 +53,7 @@ JavaScript
 
 6. ES7 async/await 异步语法糖    必须     装饰器 @ 非必须
 
-7. 了解this的指向，call、apply、bind方法对this的改变    必须，尽量理解
+7. 了解this的指向，箭头函数、call、apply、bind方法对this的改变    必须，尽量理解
 
 8. 理解ES2015的模块化，import、export   必须
 
