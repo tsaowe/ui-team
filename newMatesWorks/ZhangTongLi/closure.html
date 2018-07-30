@@ -5,8 +5,29 @@
     <title>closure</title>
 </head>
 <body>
+<div id="test">
+    <div>第一个</div>
+    <div>第二个</div>
+    <div>第三个</div>
+    <div>第四个</div>
+</div>
 <script>
-    function outerFun()
+    function test()
+    {
+        var els = document.getElementById("test").getElementsByTagName("div");
+        for (var i = 0; i < els.length; i++)
+        {
+            var div = els[i];
+            div.onclick = function()
+            {
+                alert(div.innerHTML);
+                return false;
+            }
+        }
+    }
+    test();
+
+    /*function outerFun()
     {
         var a=0;
         function innerFun()
@@ -22,6 +43,7 @@
     var obj2=outerFun();
     obj2();  //结果为1
     obj2();  //结果为2
+    */
     /*var name = "The Window";
     var object = {
         name : "My Object",
