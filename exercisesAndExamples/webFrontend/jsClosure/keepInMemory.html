@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>keep in memory</title>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+    /*
+
+    运行，然后看每一个alert弹出的是什么
+
+    */
+
+    function outerFunc (){
+        // the variable i will keep in memory, it won't be recovered by GC,
+        // and the space it occupies in memory will not be released too.
+        var i = 0;
+
+        function get (){
+            alert(i);
+        }
+
+        function increase (){
+            i += 1;
+        }
+
+        return {
+            get: get,
+            increase: increase
+        };
+    }
+
+    var handle = outerFunc();
+    handle.get(); // 0
+    handle.increase();
+    handle.get(); // 1
+    handle.increase();
+    handle.get(); // 2
+
+</script>
+</html>
