@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function lighton( ){
+            document.getElementById("myimage").src="/ui-team/newMatesWorks/LiuYaoYao/image/4.gif";
+        }
+        function lightoff( ){
+            document.getElementById("myimage").src="/ui-team/newMatesWorks/LiuYaoYao/image/3.png"
+        }
+    </script>
+</head>
+<body>
+    <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="/ui-team/newMatesWorks/LiuYaoYao/image/3.png" width="100px" height="180px">
+    <p>点击鼠标一直亮着</p>
+</body>
+</html>

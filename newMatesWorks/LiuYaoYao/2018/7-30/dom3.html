@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changetext(id){
+            id.innerHTML='Ooops!'
+            id.style.color='blue';
+        }
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+    <!--<h1 onclick="this.innerHTML='Ooops' ,this.style.color='blue'">点击文本</h1>-->
+    <h1 onclick="changetext(this)">点击文本</h1>
+    <p>点击按钮执行display（）函数</p>
+    <button onclick="displayDate()">点这里</button>
+    <p id="demo"></p>
+</body>
+</html>

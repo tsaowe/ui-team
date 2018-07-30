@@ -39,3 +39,6 @@ css 的定位于浮动：display：block可以让行内元素表现的像块级�
        javascript能够创建动态的html内容，使用document.write()可用于直接向html输出流写内容,绝对不能再文档加载完后使用document.write,这样会覆盖文档
        改变html内容可以使用innerHTML属性，（这个属性主要是通过id获取到的）
        改变html样式document.getElementById(id).style.property=new style
+       dom的事件操作：this的重点操作,this可以被当成id传入到函数里面，this也可以代表一个对象，onload事件会在用户进入或者离开页面时被触发，onload事件可用于处理cookie
+       onmouseover和onmouseout事件可用于在用户的鼠标移至html元素上方或移出元素时触发函数
+       onmousedown,onmouseup以及onclick构成了鼠标点击事件的所有部分，首先当点击鼠标按钮时，会触发onmousedown事件，当释放鼠标按钮时，会触发onmouseup事件，左后，当完成鼠标点击时，会触发onclick事件
