@@ -42,3 +42,14 @@ css 的定位于浮动：display：block可以让行内元素表现的像块级�
        dom的事件操作：this的重点操作,this可以被当成id传入到函数里面，this也可以代表一个对象，onload事件会在用户进入或者离开页面时被触发，onload事件可用于处理cookie
        onmouseover和onmouseout事件可用于在用户的鼠标移至html元素上方或移出元素时触发函数
        onmousedown,onmouseup以及onclick构成了鼠标点击事件的所有部分，首先当点击鼠标按钮时，会触发onmousedown事件，当释放鼠标按钮时，会触发onmouseup事件，左后，当完成鼠标点击时，会触发onclick事件
+       普通绑定事件和用addEventListenet添加事件有什么区别：
+       （1）onclick添加事件不能绑定多个事件，后面绑定的会覆盖前面的。addEventListenet能添加多个事件绑定，按顺序执行
+       （2）普通方式绑定事件后，不可以取消。addEventListenet绑定后则可以用removeEventListener取消
+       （3）addEventListenet的第三个参数为true，浏览器采用Capture（捕捉）
+                                        为false，浏览器采用bubbing（冒泡）--建议使用
+            element.addEventListener(event, function, useCapture);第一个参数可以是click，或者mousedown，mouseover，第二个参数是事件触发后调用的函数
+
+事件传递有两种方式：冒泡与捕获，事件传递定义了元素事件触发的顺序。如果 如果你将 <p> 元素插入到 <div> 元素中，用户点击 <p> 元素, 哪个元素的 "click" 事件先被触发呢？
+                    在冒泡中，内部元素的事件会先被触发，然后再触发外部元素，即： <p> 元素的点击事件先触发，然后会触发 <div> 元素的点击事件。
+                    在捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件，即： <div> 元素的点击事件先触发 ，然后再触发 <p> 元素的点击事件。
+                    铺获先发生，冒泡后发生
