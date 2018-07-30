@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+<body>
+<script type="text/javascript">
+    var Person = function () { };
+        Person.prototype.Say = function () {
+            alert("Person say");
+        }
+        Person.prototype.Salary =20000;
+    var Programmer = function () { };
+        Programmer.prototype = new Person();
+        Programmer.prototype.WriteCode = function() {
+            alert("programmer writes code");
+        };
+        Programmer.prototype.Salary = 10000;
+    var p = new Programmer();
+    p.Say();
+    p.WriteCode();
+    console.info(p.Salary);
+
+    /*
+    var p=new Programmer()可以得出p.proto=Programmer.prototype;
+
+    而在上面我们指定了Programmer.prototype=new Person();
+    我们来这样拆分，var p1=new Person();Programmer.prototype=p1;
+    那么:
+    p1.proto=Person.prototype;
+    Programmer.prototype.proto=Person.prototype;
+    根据上面得到p.proto=Programmer.prototype。
+    可以得到p.proto.proto=Person.prototype。
+
+    p.Say()。由于p没有Say这个属性，于是去p.proto也就是Programmer.prototype，也就是p1中去找由于p1中也没有Say，
+    那就去p.proto.proto，也就是Person.prototype中去找，于是就找到了alert(“Person say”)的方法。
+    其他同理。
+     */
+</script>
+</body>
+</html>
