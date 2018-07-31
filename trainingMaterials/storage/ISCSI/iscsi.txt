@@ -1,0 +1,24 @@
+#!/bin/bash
+#在Ubuntu下的
+#创建target,直接运行脚本，就可以创建成功
+targetcli ls
+targetcli /backstores/block create iscsi_store0 /dev/md5
+targetcli /iscsi create iqn.2016-06.com.example:server
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls create iqn.2016-06.com.example:desktop
+targetcli /iqn.2016-06.com.example:server/tpg1/luns create /backstores/block/iscsi_store0
+targetcli /iqn.2016-06.com.example:server/tpg1/portals create 0.0.0.0
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1 set attribute generate_node_acls=1
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1 set attribute authentication=1
+
+
+
+
+#CHAP认证，这里的就是在服务器端修改的用户名和密码
+
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls/iqn.2016-06.com.example:desktop set auth userid=test
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls/iqn.2016-06.com.example:desktop set auth password=test
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls/iqn.2016-06.com.example:desktop set auth mutual_userid=test
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls/iqn.2016-06.com.example:desktop set auth mutual_password=test
+targetcli /iscsi/iqn.2016-06.com.example:server/tpg1/acls/iqn.2016-06.com.example:desktop get auth
+
+
