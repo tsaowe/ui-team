@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>switch image</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-family: "Microsoft YaHei", "微软雅黑";
+            }
+
+            .title {
+                margin-top: 30px;
+                text-align: center;
+                color: black;
+            }
+
+            .image-container {
+                position: relative;
+                margin: 40px auto;
+                width: 470px;
+                height: 270px;
+                box-sizing: border-box;
+                overflow: hidden;
+                user-select: none;
+            }
+
+            .image-container .image-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .image-container .image-box.second {
+                right: 0;
+                width: 200px;
+                z-index: 1;
+            }
+
+            #bar {
+                content: " ";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 200px;
+                width: 3px;
+                height: 270px;
+                background: #dcd9d9;
+                z-index: 10;
+            }
+
+            #bar:hover {
+                background: #b2b2b2;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="title">切换图片</div>
+        <div class="image-container">
+            <div class="image-box first">
+                <img alt="" src="./image/image1.png" />
+            </div>
+            <div class="image-box second">
+                <img alt="" src="./image/image2.png" />
+            </div>
+            <div id="bar"></div>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        /*
+
+        1. 功能要求：
+
+        移动鼠标至分界线上，按住不放，然后左右拖动，实现两张图片的显示与隐藏
+
+
+        2. 所用到的图片：
+
+        放置于本目录下image文件夹内
+
+
+        3. 参考的技术要点：
+
+        DOM mouse 事件，CSS position 布局
+
+        */
+
+        // write your js codes below
+
+        window.onload = function (){
+            // since the image loading needs some time to be finished, so we do all
+            // operations after all things are ready
+
+            // get the dom elements
+            var imageContainer = document.getElementsByClassName('image-container')[0];
+            var bar = document.getElementById('bar');
+            var secondImageBox = document.getElementsByClassName('second')[0];
+
+            // get some values
+            var containerWidth = imageContainer.offsetWidth;
+
+            // a mouse down flag
+            var isMouseDown = false;
+
+            // bind mouse click events on bar
+            bar.addEventListener('mousedown', function (){
+                isMouseDown = true;
+            });
+
+            bar.addEventListener('mouseup', function (){
+                isMouseDown = false;
+            });
+
+            // bind mouse move event on container
+            imageContainer.addEventListener('click', function (){
+                isMouseDown = false;
+            });
+
+            imageContainer.addEventListener('mousemove', function (e){
+                if (isMouseDown){
+                    var width = e.offsetX;
+                    if (width >= 10 && width <= (containerWidth - 10)){
+                        // remain a 10px width gap
+                        width += 'px';
+                        secondImageBox.style.width = width;
+                        bar.style.left = width;
+                    }
+                }
+            });
+        }
+    </script>
+</html>

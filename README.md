@@ -4,7 +4,7 @@
 
 ```
 ui-team
-    |-- exercises    - Exercises group by different technical directions
+    |-- exercisesAndExamples    - Exercises and examples group by different technical directions
     |        |--webFrontend
     |        |-- webBackend
     |        |-- Linux
@@ -21,7 +21,7 @@ ui-team
     |        |-- webBackend
     |        |-- Linux
     |        |-- Docker
-    |        | ...
+
 ```
 
 For each new mate's work folder, you new mates can put your works on it, for the unified management,

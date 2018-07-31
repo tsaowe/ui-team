@@ -1,0 +1,7 @@
+#!/bin/bash
+for bs in 4K 8K 16K 32K 64K 128K 256K 512K 1024K  4096K;
+do
+    for rw in   rw ;
+            do  fio -filename=/dev/sdb -filename=/dev/sdc -direct=1 -iodepth=1 -rw=$rw -ioengine=libaio -bs=$bs  -numjobs=1 -runtime=3 -group_reporting -name=$bs\_$rw >>report.txt
+            done
+done

@@ -1,0 +1,104 @@
+HTML
+
+1.	尝试了解一下HTML5新增的元素：
+    <header>、<article>、<section>、<footer>、<video>、<audio>、<canvas>等
+    它们被标准组织引入的原因：更加语义化的标签、提供更加丰富的页面功能
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+CSS
+
+1. line-height 顶线、中线、基线、底线的概念，以及line-height和vertical-align联合使用中的问题
+
+2. 更加丰富多样的清除浮动方式还有哪些
+
+3. CSS position支持的属性有哪些，有什么区别，以及z-index生效的前提是什么
+
+4. CSS3 了解flex弹性布局，现代浏览器中栅格布局的代替者   必须
+
+   参考网站：
+   中文：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
+5. CSS3 了解动画、过度、变换、过滤等新特效，animation、transition、translate、filter
+
+6. 实现一个CSS 圣杯布局
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+DOM
+
+1. 了解一下Node的类型：Element、Document、Text
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+JavaScript
+
+1. JavaScript的预解析机制、变量的提升
+
+2. 什么是作用域，ES2015的块级作用域和传统的function作用域的区别    必须，尽量理解
+
+3. 闭包(closure)的产生，内存泄露问题    必须，尽量理解
+
+4. 了解JavaScript的原型链prototype    必须，尽量理解
+
+5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量增强、对象与数组的解构赋值等
+   特别是弄明白 箭头函数和普通function函数的区别（this指向），Promise/then异步处理对象、let和var的区别
+   必须
+
+6. ES7 async/await 异步语法糖    必须     装饰器 @ 非必须
+
+7. 了解this的指向，箭头函数、call、apply、bind方法对this的改变    必须，尽量理解
+
+8. 理解ES2015的模块化，import、export   必须
+
+9. 传统的function有四种方式被调用:
+   作为普通的函数、作为类的构造函数、作为对象内部的方法、被call/apply调用
+   理解下每一种调用方式
+
+10. Javascript的事件循环机制 Event Loop
+
+11. Javascript的垃圾回收机制 Garbage Collection
+
+12. Javascript引擎(解释器)的变革
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+HTTP
+
+1. 了解Fetch的基础知识，以及它和Ajax的区别   必须
+
+2. HTTP2.0相对于HTTP1.X有哪些优化的地方
+
+3. Cookie的作用
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+其他知识
+
+1. EcmaScript是什么
+
+2. WHATWG成立的目的
+
+3. 通过访问 caniuse.com 来搜索某个API在常用浏览器上的支持情况
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+下集预告：
+
+1. css预处理语言与后处理工具、MVVM响应式概念、流程化任务工具Gulp、模块打包工具webpack/browserify
+
+2. 接触项目有关的框架和库 React.js、Redux
+
+
+
