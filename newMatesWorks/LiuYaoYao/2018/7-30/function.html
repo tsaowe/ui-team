@@ -30,12 +30,24 @@
    //aa="i am a function"
    //console.info(aa)
    // })*/
-    aa="i am aa"
+   /* aa="i am aa"
     function AA(){
       console.log(aa)
         var aa="i am aa in a function";
       console.info(aa)
     }
-    AA();
+    AA();*/
+   const deepFreeze = function(obj) {
+       Object.freeze(obj)
+       for (const key in obj) {
+           if (typeof obj[key] === 'object') deepFreeze(obj[key])
+       }
+       return obj
+   }
+   const foo = deepFreeze({
+       a: {b: 'bar'}
+   })
+   foo.a.b = 'zar'
+   console.log(foo.a.b) // bar
 </script>
 </html>
