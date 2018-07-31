@@ -17,31 +17,31 @@
         var obj = {
             test1 : function (){
                 window.setTimeout(function (){
-                    console.info(this)
+                    console.info('test1', this)
                 }, 100)
             },
 
             test2 : function (){
                 window.setTimeout(() => {
-                    console.info(this)
+                    console.info('test2', this)
                 }, 100)
             },
 
-            test3: () => console.info(this),
+            test3: () => console.info('test3', this),
 
             test4: function (){
-                 console.info(this)
+                 console.info('test4', this)
             },
 
             test5 (){ // 对象增强写法
-                console.info(this);
+                console.info('test5', this);
             }
         }
 
         obj.test1(); // window
         obj.test2(); // obj
-        obj.test3(); // obj
-        obj.test4(); // window
+        obj.test3(); // window
+        obj.test4(); // obj
         obj.test5(); // obj
     </script>
 </html>
