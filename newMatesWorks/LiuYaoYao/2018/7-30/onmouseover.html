@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color: darkred;
+            width: 120px;
+            height: 20px;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function mOver(obj){
+            obj.innerHTML="Thank You"
+        }
+        function mOut(obj){
+            obj.innerHTML="Mouse Over Me"
+        }
+    </script>
+</head>
+<body>
+    <div  onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over Me</div>
+
+</body>
+</html>

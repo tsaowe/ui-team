@@ -1,0 +1,33 @@
+#!/bin/bash
+//是在centos下的，在Ubuntu下可能有些命令不相同
+#配置iscsid.conf文件
+funname(){
+echo node.session.auth.authmethod = CHAP |tee -a /etc/iscsi/iscsid.conf
+#!/bin/bash
+
+#配置iscsid.conf文件
+funname(){
+echo node.session.auth.authmethod = CHAP |tee -a /etc/iscsi/iscsid.conf
+echo node.session.auth.username = test |tee -a /etc/iscsi/iscsid.conf
+echo node.session.auth.password = test |tee -a /etc/iscsi/iscsid.conf
+echo node.session.auth.username_in = test |tee -a /etc/iscsi/iscsid.conf
+echo node.session.auth.password_in = test |tee -a /etc/iscsi/iscsid.conf
+}
+
+login(){
+echo InitiatorName=iqn.2016-06.com.example:desktop | tee -a /etc/iscsi/initiatorname.iscsi
+systemctl start iscsi
+systemctl enable iscsi
+#发现目标
+iscsiadm -m discovery -t st -p 192.168.37.148
+#登录目标
+iscsiadm -m node -T iqn.2016-06.com.example:server -p 192.168.37.148 -l
+iscsiadm -m session -P 0
+lsblk --scsi
+#fdisk -l
+}
+
+logout(){
+iscsiadm -m node -T iqn.2016-06.com.example:server -p 192.168.37.148 -u
+iscsiadm -m session -P 0
+}

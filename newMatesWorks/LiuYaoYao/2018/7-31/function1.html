@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var a="我是就全局的a"
+    var b="我是全局的b"
+    function fun1(){
+        var a="我是局部的a"
+        console.info(a)//我是局部的a
+        function fun2(){
+            console.info(a);//error
+            console.info(b);//error
+        }
+        func2();
+    }//fun2是一个闭包函数
+    fun1();
+</script>
+</html>

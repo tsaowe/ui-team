@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test1{
+            width: 60%;
+            //border-width: medium;
+            border:1px solid black;
+            background-color: #3690ff;
+
+        }
+        .test2{
+            height: 50px;
+            border-style: solid;
+            border-width: medium;
+            background-image:url("./image/1.png") ;
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        .test3{
+            //width: 50%;
+           // height: 90px;
+            border: 1px solid darkred;
+            display: inline-block;
+            vertical-align: bottom;
+            width:100px;
+            height:100px;
+            line-height:180px;
+            text-align:center;
+            text-transform: capitalize;
+        }
+        h2.left{
+            position: relative;
+            left: -40px;
+        }
+        h2.right{
+            position: relative;
+            right: -40px;
+           // left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p class="test1">some test</p>
+    <p class="test2">some test</p>
+    <p class="test3">some test</p>
+    <p><b>注意：</b>“border-width”属性如果单独使用则不起作用，要先使用“border-style”属性来设置borders</p>
+    <h2>这是位于正常位置的标题</h2>
+    <h2 class="left">这个标题相对于正常位置向左移动</h2>
+    <h2 class="right">这个标题相对于正常位置向右移动</h2>
+    <div style="background-color: #FFA500;line-height: 0;font-size: 100px;margin-top: 100px;">
+        <span style="border-top:3px dotted red;width:50px;display:inline-block;vertical-align:middle;"></span>
+        <span>xgh</span>
+    </div>
+    <div style="background-color: #FFA500;line-height: 0;font-size: 100px;margin-top: 100px;">
+        <span style="border-top:3px dotted red;width:50px;display:inline-block;vertical-align:top;"></span>
+        <span>xgh</span>
+    </div>
+</body>
+</html>
