@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>js async/await</title>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+    /*
+
+    运行，然后看每一个console.info打印出的是什么
+
+    可以尝试一下Promise.all Promise.race等方法
+
+    */
+
+    var i = 0;
+
+    let p1 = (i) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+            i += 1;
+            console.info(i);
+            resolve(i);
+        }, 1000);
+    });
+    };
+
+    let p2 = (i) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                i += 1;
+                console.info(i);
+                resolve(i);
+            }, 1000);
+        });
+    };
+
+    let p3 = (i) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                i += 1;
+                console.info(i);
+                resolve(i);
+            }, 1000);
+        });
+    };
+
+    p1(i)
+    .then((i) => {
+        return p2(i);
+    })
+    .then((i) => {
+        return p3(i);
+    })
+    .catch((err) => {
+        console.info(err);
+    });
+</script>
+</html>
