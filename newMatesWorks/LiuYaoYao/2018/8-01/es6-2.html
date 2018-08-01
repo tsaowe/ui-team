@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    /*
+    setTimeOut的第三个参数
+    setTimeOut(function,time,arg)
+    function：要执行的函数
+    time：延时毫秒
+    arg：传给function的参数
+
+    function timeout(ms){
+        return new Promise((resolve,reject)=>{
+            setTimeout(resolve,ms,'done');
+        });
+    }
+    timeout(100).then(function(value){
+        console.info(value);
+    })
+    **/
+    function timeout(ms){
+        return new Promise(function(resolve,reject){
+            if (resolve) {
+                setTimeout(resolve,ms,'success');
+            }else{
+                setTimeout(reject,ms,'failure');
+            }
+        });
+    }
+    timeout(100).then(function(value){
+        console.info(value);
+    })
+</script>
+</html>

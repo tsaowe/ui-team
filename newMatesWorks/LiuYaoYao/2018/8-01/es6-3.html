@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    /*
+    promise新建后立即执行，所以首先输出的是promise，然后，then方法指定的回调函数，将在当前脚本所有同步任务执行完才会执行
+    ，所以resolve最后输出
+    * */
+    let promise = new Promise((resolve,reject)=>{
+        return resolve();
+        console.info('promise');
+    });
+    promise.then(function(){
+        console.info('resolved');
+        console.info('promise');
+    });
+    console.info('hi!')
+</script>
+</html>

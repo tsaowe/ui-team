@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    /*
+    这时p1的状态就会传递给p2，也就是说，p1的状态决定了p2的状态。如果p1的状态是pending，
+    那么p2的回调函数就会等待p1的状态改变；
+    如果p1的状态已经是resolved或者rejected，那么p2的回调函数将会立刻执行。
+    * */
+    const p1 = new Promise((resolve,reject)=>{
+        setTimeout(() => reject(new Error('failure')),3000)
+    });
+    const p2 = new Promise(function(resolve,reject){
+        setTimeout(() => resolve(p1),1000);
+    });
+    p2.then(result=>console.info(result)).catch(error=>console.info(error))
+   /*
+   在上面的代码中，p1是一个promise，3秒之后他的状态变为reject，p2在1秒之后改变
+   resolve方法返回的是p1，由于p2返回的是p1的promise，所以p2无效
+   p1的状态决定了p2的状态，所以后面的then语句都变成了针对后者的p1
+   又过了2秒，p1变成rejected，导致触发catch指定的回调函数
+    */
+
+
+</script>
+</html>

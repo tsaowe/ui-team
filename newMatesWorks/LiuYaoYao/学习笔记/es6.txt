@@ -1,0 +1,20 @@
+const有一个很好的应用场景，就是当我们引用第三方库的时声明的变量，用const来声明可以避免未来不小心重命名而导致出现bug：
+const monent = require('moment')
+箭头函数：这两个表达的含义是一样的
+ function add(i){
+        return i+1;
+    }
+    alert(add(1))
+  var f = i =>i+1
+    alert(f(1))
+
+
+    //setTimeout是window对象的方法,等于是window调用的，所以回调函数内部this，指向window
+   //除非传给它的回调函数是箭头函数,或者使用bind强制改变过this指向,它固定了this的指向为当前书写的地方，也就是整个class类，也就是 new出来的对象
+   promise对象:promise是异步编程的一种解决方案，他是一个容器
+   promise对象有两个特点：（1）对象的状态不受外界的影响，promise含有三种状态：pending（进行中）fulfilled（已成功）rejected（已失败）
+   promise函数是一个构造函数
+   promise新建后立即执行，所以首先输出的是promise，然后，then方法指定的回调函数，将在当前脚本所有同步任务执行完才会执行
+       ，所以resolve最后输出
+      如果调用resolve函数和reject函数时带有参数，那么它们的参数会被传递给回调函数。reject函数的参数通常是Error对象的实例，表示抛出的错误；resolve函数的参数除了正常的值以外，
+      还可能是另一个 Promise 实例

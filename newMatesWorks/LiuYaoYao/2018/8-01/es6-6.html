@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let promise = new Promise(function(resolve, reject) {
+        return resolve();//这里值得注意一下，加上return后，下一句将不会执行
+        console.log('Promise');//
+    });
+
+    promise.then(function() {
+        console.log('resolved.');
+        console.log('Promise');//放在这里后，所有的都成了回调函数中的一部分，所以先执行当前的脚本在执行回调函数中de
+    });
+
+    console.log('Hi!');
+</script>
+</html>
