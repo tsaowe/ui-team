@@ -19,4 +19,4 @@ const monent = require('moment')
       如果调用resolve函数和reject函数时带有参数，那么它们的参数会被传递给回调函数。reject函数的参数通常是Error对象的实例，
       表示抛出的错误；resolve函数的参数除了正常的值以外，
       还可能是另一个 Promise 实例
-   class:
+   class:类不存在变量提升，必须保证子类在父类之后定义

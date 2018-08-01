@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    /*
+    这里值得注意的是：这个类的名字是Myclass而不是Me
+    Me只在Class的内部代码可用，指代当前类，上面的代码表示，Me只在Class内部有定义
+     */
+    /*
+    const Myclass =class Me{
+        getClassName(){
+            return Me.name;
+        }
+    }
+    let inst =new Myclass();
+    inst.getClassName()
+    */
+    let person =new class {
+        constructor(name){
+            this.name=name;
+        }
+        sayName(){
+            console.info(this.name);
+        }
+    };
+     person("张三").sayName();
+
+</script>
+</html>
