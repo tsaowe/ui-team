@@ -1,2 +1,13 @@
 const有一个很好的应用场景，就是当我们引用第三方库的时声明的变量，用const来声明可以避免未来不小心重命名而导致出现bug：
 const monent = require('moment')
+箭头函数：这两个表达的含义是一样的
+ function add(i){
+        return i+1;
+    }
+    alert(add(1))
+  var f = i =>i+1
+    alert(f(1))
+
+
+    //setTimeout是window对象的方法,等于是window调用的，所以回调函数内部this，指向window
+   //除非传给它的回调函数是箭头函数,或者使用bind强制改变过this指向,它固定了this的指向为当前书写的地方，也就是整个class类，也就是 new出来的对象

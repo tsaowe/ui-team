@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    //setTimeout是window对象的方法,等于是window调用的，所以回调函数内部this，指向window
+    //除非传给它的回调函数是箭头函数,或者使用bind强制改变过this指向,它固定了this的指向为当前书写的地方，也就是整个class类，也就是 new出来的对象
+    class Animal{
+        constructor(){
+           this.type = 'animal'
+        }
+        says(say){
+            setTimeout(()=>{
+                console.info(this.type+ ' says'+ say );
+            },0)
+        }
+    }
+    var animal = new Animal();
+    animal.says('hi');
+</script>
+</html>
