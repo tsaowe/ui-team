@@ -67,14 +67,14 @@
 
    *** 在这里强制要求你去学习她
 
-   React.js参考网站：
+   参考网站：
    中文：https://doc.react-china.org/
    英文：https://reactjs.org/
 
 3. React-Router
    配合React.js 实现基于url的路由的一个扩展库
 
-   参看网站：
+   参考网站：
    中文：https://reacttraining.com/react-router/web/example/basic
    英文：https://reacttraining.com/react-router/web/example/basic
 
