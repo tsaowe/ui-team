@@ -47,9 +47,14 @@ JavaScript
 
 4. 了解JavaScript的原型链prototype    必须，尽量理解
 
-5. ES2015的常用新功能了解：Promise/then、class、箭头函数、const、let、对象字面量增强、对象与数组的解构赋值等
-   特别是弄明白 箭头函数和普通function函数的区别（this指向），Promise/then异步处理对象、let和var的区别
-   必须
+5. ES2015的常用新功能了解：
+   Promise/then、
+   class、
+   箭头函数、    箭头函数和普通function函数的区别（this指向）
+   const、let、
+   对象字面量增强、
+   对象与数组的解构赋值、延展、
+   特别是弄明白
 
 6. ES7 async/await 异步语法糖    必须     装饰器 @ 非必须
 
