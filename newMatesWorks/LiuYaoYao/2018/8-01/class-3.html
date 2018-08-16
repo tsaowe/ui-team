@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    const bar = Symbol('bar');
+    const  snaf = Symbol('snaf');
+    export default class myClass{
+        //公有方法
+        foo(baz){
+            this[bar](baz);
+        }
+        [bar](baz){
+            return this[snaf]=baz;
+        }
+    }
+    //这里调用不到，因为有Symbol
+</script>
+</html>
